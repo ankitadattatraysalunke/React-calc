@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {add, sub, mult, div} from "./Calc";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App()
+{
+    return(
+        <>
+    <ul>
+    <li>The sum of no is {add(40, 4)}</li>
+    <li>The sub of no is {sub(40, 4)}</li> 
+    <li>The mult of no is {mult(40, 4)}</li>  
+    <li>The div of no is {div(40, 3)}</li>   
+  </ul>
+        </>
+    );
 }
 
 export default App;
